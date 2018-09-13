@@ -1,0 +1,433 @@
+% **********************************************************
+% This file contains the bibliographical database 
+% for the numerical parts of my thesis 
+% (and any paper henceforth)
+% Frank S. Tsung
+% Copyright, 1996.
+% **********************************************************
+% Define Abbreviations for some of my favorite journals
+% **********************************************************
+@string{jcp="Journal. of Comp. Phys."}
+@string{cpc="Comp. Phys. Comm."}
+@string{pf="Physics of Fluids"}
+% **********************************************************
+% Define Abbreviations for some of my favorite authors
+% **********************************************************
+@string{abl = "A. B. Langdon"}
+@string{jmd = "J. M. Dawson"}
+@string{ckb = "C. K. Birdsall"}
+@string{vv = "V. Vahedi"}
+@string{vkd = "V. K. Decyk"}
+@string{scc = "S. C. Cowley"}
+% **********************************************************
+% **********************************************************
+%               General References for PIC 
+%                    Plasma Simulations
+% **********************************************************
+
+@article{dawson:83,
+author=jmd,
+title="{Particle Simulation of Plasmas}",
+journal="Reviews of Modern Physics",
+volume=55,
+pages="403-448", 
+year=1983
+}
+
+@article{dawson:62,
+author=jmd,
+title="{One-Dimensional Plasma Model}",
+journal=pf,
+volume=5,
+pages=445, 
+year=1962
+}
+
+@article{horowitz:89,
+author="E. J. Horowitz, D. E. Shumaker, D. V. Anderson",
+journal= jcp,
+volume=84,
+pages=279,
+year=1989
+}
+		  
+%                          9/3/97 --
+% Get the reference for this paper and a summary of each
+% reference.  Of particular importance is the paper by
+% Hammet et al, which first suggests the possibility of
+% a numerical tokamak.  Erick Horowitz wrote the first 
+% parallel shared-memory PIC code, with an efficient 
+% charge deposition (via particle sort).  That's an important
+% reference in the annals of parallel PIC
+		  
+@article{hammet:90,
+author="G. Hammet and  F. W. Perkins",
+journal=prl,
+volume=64,
+pages=3019,
+year=1990
+}
+
+@article{dawson:93,
+author="{John M. Dawson, Viktor K. Decyk, Richard D. Sydora
+and P. Liewer}",
+title="{High-Performance Computing and Plasma Physics}",
+journal="Physics Today",
+volume=46,
+pages=64, 
+year=1993
+}
+
+@article{decyk:89,
+author="{V. K. Decyk and P. C. Liewer}",
+title="{A General Concurrent Algorithm for Plasma
+Particle-in-Cell Codes}", 
+journal=jcp,
+volume=85,
+pages=302,
+year=1989
+}
+
+
+@article{okuda:70,
+author="H. Okuda and C. K. Birdsall",
+title="Collisions in a Plasma of Finite-Sized Particles",
+journal=pf,
+volume=13,
+pages="2123",
+year=1970
+}
+
+
+% ********************************************************
+%                 EM-PIC References
+% ********************************************************
+
+@article{eastwood/vp,
+author="J. W. Eastwood",
+title = "{Virtual Particle Method in PIC Calculations}",
+journal=cpc,
+volume=64,
+pages = "252-266",
+year=1991
+}
+
+@article{buneman:90,
+author="J. Villasenor and O. Buneman",
+title="{Rigorous Charge Conservation for Local
+Electromagnetic Field Solvers}",
+journal=cpc,
+volume=69,
+pages="306-316",
+year=1992
+}
+
+@article{marder:87,
+author="B. Marder",
+title="A Method for Incorporating {Gauss' Law}
+into Electromagnetic {PIC} Codes",
+journal=jcp,
+volume=68,
+pages=48,
+year=1987
+}
+
+@article{morse:71,
+author="Nielsen, C. W. and
+R. L. Morse",
+journal="Phys. Fluids",
+year=1971,
+pages="830",
+volume=14
+}
+
+@article{nielsen:90,
+author="Nielsen Jr., D. E. and
+A. T. Drobot",
+title="An Analysis and Optimization of
+the Pseudo-current Method",
+journal=jcp,
+year=1990,
+pages="31-40",
+volume=89
+}
+
+@article{abl:92,
+author=abl,
+title="On Enforcing {Gauss' Law} in Electromagnetic {Particle-in-Cell}
+Codes",
+journal=cpc,
+volume=70,
+pages="447-450",
+year=1992
+}
+
+@article{yee:66,
+author="K. S. Yee",
+title="Numerical Solution of Initial Boundary Value Problems 
+Involving {Maxwell's} Equations in Isotropic Media",
+journal="{IEEE Trans. Antennas Propagat.}",
+volume=14,
+year=1966,
+pages="302-307"
+}
+ 
+@article{wang:95,
+author="Wang, J. and Liewer, P. and V. K. Decyk",
+title="{3-D Electromagnetic Plasma Particle Simulations on a MIMD 
+Parallel Computer}",
+journal="Computer Physics Communication",
+year=1995,
+volume = 87,
+pages = "35-53"
+}
+
+@article{lindman:75,
+author="E. L. Lindman",
+title= " {``Free-Space'' Boundary Conditions for the Time 
+Dependent Wave Equation}",
+journal= jcp,
+volume="{18}",
+pages="66-78",
+year=1975
+}
+
+@article{berenger:94,
+author="J. P. Berenger",
+title="{A Perfectly Matched Layer for the Absorption of
+Electromagnetic Waves}",
+journal=jcp,
+volume="114",
+pages="185--200",
+year=1994
+}
+
+@article{berenger:96,
+author="J. P. Berenger",
+title="{Three Dimensional Perfectly Matched Layer for the Absorption of
+Electromagnetic Waves}",
+journal=jcp,
+volume="127",
+pages="363--379",
+year=1996
+}
+
+@article{boris:70,
+author="J. P. Boris",
+title="{Relativistic Plasma Simulation-Optimization of a Hybrid Code}", 
+journal="Proc. Fourth Conf. Num. Sim. Plasmas",
+volume="4",
+pages="3-67",
+year=1970
+}
+% ***********************************************************
+%           References about Programming
+%        Techniques & Styles (like OOPIC or
+%       Portable FORTRAN Programming, etc...)
+% ***********************************************************
+
+@article{decyk:93,
+author=vkd,
+title="{How to Write (Nearly) Portable {FORTRAN}
+Programs for Parallel Computers}",
+journal="Computers in Physics",
+volume=7,
+pages=418,
+year=1993
+}
+
+
+% ***********************************************************
+%        Elliptical Solver References
+%                added 7/25/97
+% ***********************************************************
+
+
+@article{sweet:74,
+author="Roland A. Sweet",
+title="A Generalized Cyclic Reduction Algorithm",
+journal="{SIAM} Journal of Numerical Analysis",
+month="June",
+volume="{\bf 11}",
+pages = "506-520",
+year=1974
+}
+
+@article{swarztrauber:74,
+author="Paul N. Swarztrauber",
+title="A Direct Method For the Discrete Solution
+of Separable Elliptic Equations",
+journal="{SIAM} Journal of Numerical Analysis",
+month="June",
+volume="{\bf 11}",
+pages = "1136-1150",
+year=1974
+}
+
+%************************************************
+%          Books go below this line
+%************************************************
+
+@book{numrec,
+author="W. H. Press and
+B. P. Flannery and
+S. A. Teukolsky",
+publisher="Cambridge University Press",
+title="Numerical Recipes",
+year="1986"
+}
+
+@book{thebook,
+author="C. K. Birdsall and A. B. Langdon",
+title="Plasma Physics via Computer Simulation",
+publisher="McGraw-Hill Book Company",
+address="New York",
+year=1985
+}
+
+@book{hillis:82,
+author="W. Daniel Hillis",
+publisher="The {MIT} Press",
+title="The Connection Machine",
+address="Cambridge, Massachusetts",
+year=1982
+}
+
+@book{hockney:88,
+author="Hockney, R. W. and
+Jesshope, C. R.",
+publisher="Adam Hilger",
+year=1988,
+address="{Bristol} and {Philadelphia}"
+}
+
+@book{lambert73,
+author="J. D. Lambert",
+title="Computational Methods in 
+Ordinary Differential Equations",
+publisher="John Wiley \& Sons",
+address="New York",
+year=1973
+}
+
+@book{cheney,
+author="W. Cheney and D. Kincaid",
+title="Numerical Mathematics and Computing",
+publisher="Brooks/Cole Publishing Company",
+address="{Pacific Grove, California}",
+year=1980
+}
+
+
+@book{strikwerda,
+author="J. C.  Strikwerda",
+title="Finite Difference Schemes and 
+Partial Differential Equations",
+publisher="{Wadsworth} \& 
+{Brooks/Cole} Advanced Books \& Software",
+address="Pacific Grove, California",
+year="1989"
+}
+
+@book{hockney/eastwood,
+author="R. W. Hockney and J. W. Eastwood",
+title="Computer Simulation Using Particles",
+publisher="{Institute of Physics Publishing}",
+year="1988",
+address="{Bristol} and {Philadelphia}"
+}
+
+% 12/1/97 --> Added VKD's RISC optimization paper
+% in the mix.  I don't think this paper was published in
+% a journal but its contents are pretty important as they
+% really describe efficient schemes for PIC simulations on
+% a RISC machine.
+
+@article{decyk:95,
+author=vkd,
+title="Optimization of 
+{Particle-in-Cell} Codes on {RISC} Processors",
+journal="{Computers in Physics}",
+volumn=10,
+pages=290,
+year=1996
+}
+
+
+@misc{ibm:97,
+title="{The RS/6000 SP High-Performance Communication Network}",
+howpublished="available on the web in {\bf http:}
+//www.rs6000.ibm.com/resource/technology/sp\_sw1/spswp1.book\_1.html",
+year=1996
+}
+
+
+@article{pukhov:96,
+author="{A. Pukhov and J. Meyer-ter-Vehn}",
+title="{Self-Channeling of Light in Plasma Three-Dimensional PIC
+Simulation}",
+journal={Phys. Rev. Lett},
+volume=76,
+pages=3975, 
+year=1996
+}
+
+% @book{strickwerda,
+% author="J. C. Strikwerda",
+% publisher="Wadsworth \& Brooks/Cole",
+% title="Finite Difference Schemes and Partial Differential Equations",
+% year="1989"
+% }
+
+% *****************************************************************
+%              Gyro-kinetic References
+% *****************************************************************
+@article{lee:83,
+author="W. W. Lee",
+title="{Gyrokinetic Approach in Particle Simulation}",
+journal={Phys. Fluids.},
+volume=26,
+pages=556, 
+year=1983
+}
+@article{lee:87,
+author="W. W. Lee",
+title="{Gyrokinetic Particle Simulation Model}",
+journal=jcp,
+volume=72,
+pages=243, 
+year=1987
+}
+% *****************************************************************
+%              Ionization References
+% *****************************************************************
+
+@inproceedings{deng:ion:02,
+author="S. Deng and F. S. Tsung and S. Lee and W. Lu and W. B. Mori and T. Katsouleas and
+P. Muggli and B. E. Blue and C. E. Clayton and C. Joshi and S. Wang and D. Walz",
+title="Modeling of ionization physics with the PIC code OSIRIS",
+organization =  "AIP",
+year=2002,
+}
+
+
+@Article{hemker:thesis,
+author    = "Hemker, Roy Gerrit",
+title     = "Particle in cell modeling of plasma based accelerators in
+two-dimensions and three-dimensions",
+note     = "UMI-99-57820",
+year= "2000"
+     
+}
+
+@article{fonseca:02,
+title="OSIRIS: A Three-Dimensional, Fully Relativistic Particle-in-Cell
+Code for Modeling Plasma Based Accelerators",
+author="R. A. Fonseca and L. O. Silva and F. S. Tsung and V. K. Decyk and
+W. Lu and C. Ren and W. B. Mori and S. Deng and S. Lee and T. Katsouleas
+and J. C. Adam",
+journal="Lecture Notes in Computer Science",
+Volume="2331/2002",
+year=2002,
+pages="342"
+}
